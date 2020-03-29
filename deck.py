@@ -6,14 +6,14 @@ class Deck:
         self.build()
 
     def build(self):
-        for suit in ['Diamonds','Spades','Hearts','Clubs']:
+        for suit in ['♥','♦','♣','♠']:
             for value in range(1, 14):
                 if value == 1:
-                    value = "Ace"
+                    value = "A"
                 elif value == 11:
-                    value = "Jack"
+                    value = "J"
                 elif value == 12:
-                    value = "Queen"
+                    value = "Q"
                 elif value == 13:
-                    value = "King"
+                    value = "K"
                 self.cards.append(Card(suit, value))
